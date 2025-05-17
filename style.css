@@ -1,0 +1,40 @@
+/* 기본적으로 Tailwind를 쓰고 있지만 여기에 필요한 고유 스타일을 더할 수 있어요 */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 버튼 호버 효과 향상 */
+#pickButton:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* 결과 출력 영역 애니메이션 */
+#result {
+  transition: all 0.3s ease-in-out;
+  min-height: 2rem;
+}
+
+/* SweetAlert2 커스텀 (선택 사항) */
+.swal2-popup {
+  font-size: 1.1rem;
+  border-radius: 1rem !important;
+}
+
+.swal2-title {
+  color: #2f855a;
+  font-weight: 700;
+}
+
+/* 버튼 그림자 강조 */
+.btn-success {
+  box-shadow: 0 4px 10px rgba(72, 187, 120, 0.4);
+}
+
+/* 반응형 카드 박스 효과 (선택) */
+@media (max-width: 640px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
